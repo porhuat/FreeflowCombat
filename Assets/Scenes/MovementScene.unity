@@ -695,6 +695,63 @@ MonoBehaviour:
     m_CSVersion: 2
     m_ObsoleteSphereInfiniteProjection: 0
     m_ObsoleteBoxInfiniteProjection: 0
+--- !u!1001 &280951746
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0220c817ab8e6f24686424331cb7258e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 43.55
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0220c817ab8e6f24686424331cb7258e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0220c817ab8e6f24686424331cb7258e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 55.03
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0220c817ab8e6f24686424331cb7258e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0220c817ab8e6f24686424331cb7258e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0220c817ab8e6f24686424331cb7258e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0220c817ab8e6f24686424331cb7258e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0220c817ab8e6f24686424331cb7258e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0220c817ab8e6f24686424331cb7258e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0220c817ab8e6f24686424331cb7258e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0220c817ab8e6f24686424331cb7258e, type: 3}
+      propertyPath: m_Name
+      value: Parasite L Starkie
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0220c817ab8e6f24686424331cb7258e, type: 3}
 --- !u!1 &303614828
 GameObject:
   m_ObjectHideFlags: 0
@@ -6835,11 +6892,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7067756317280630589, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00314833
+      value: 0.0031483464
       objectReference: {fileID: 0}
     - target: {fileID: 7067756317280630589, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0009334403
+      value: -0.0009334452
       objectReference: {fileID: 0}
     - target: {fileID: 8345371159756518822, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_Name
@@ -11089,3 +11146,4 @@ SceneRoots:
   - {fileID: 8471694838636936996}
   - {fileID: 1803825145}
   - {fileID: 2019200907}
+  - {fileID: 280951746}
