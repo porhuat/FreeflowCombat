@@ -7433,11 +7433,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7067756317280630589, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0031483474
+      value: 0.00314833
       objectReference: {fileID: 0}
     - target: {fileID: 7067756317280630589, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0009334455
+      value: -0.0009334403
       objectReference: {fileID: 0}
     - target: {fileID: 8345371159756518822, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_Name
@@ -14161,6 +14161,9 @@ MonoBehaviour:
   fallSpeed: 0.2
   acceleration: 1
   blockRotationPlayer: 0
+  dashSpeed: 40
+  dashDuration: 0.2
+  dashTime: 0
 --- !u!1 &8952236190526045457
 GameObject:
   m_ObjectHideFlags: 0
