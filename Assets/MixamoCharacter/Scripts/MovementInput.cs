@@ -55,7 +55,7 @@ public class MovementInput : MonoBehaviour
         // 检查是否按下滑鼠右键
         if (Input.GetMouseButtonDown(1) && !isDashing)
         {
-            if (moveAxis.y > 0)
+            if (moveAxis.y > 0 || moveAxis.x != 0 || moveAxis.y < 0) // 修改此處，只要角色正在移動就朝向當前方向衝刺
             {
                 StartDash(true); // 前進衝刺
             }
@@ -162,7 +162,6 @@ public class MovementInput : MonoBehaviour
 
     void StartDash(bool IsForward)
     {
-        Debug.Log("Start Dash: " + (IsForward ? "Forward" : "Backward"));
         isDashing = true;
         dashTime = dashDuration;
         //dashDirection = moveAxis.y > 0 ? transform.forward : -transform.forward;
@@ -178,7 +177,6 @@ public class MovementInput : MonoBehaviour
 
     void EndDash()
     {
-        Debug.Log("End Dash");
         isDashing = false;
         anim.SetBool("IsDashingForward", false);
         anim.SetBool("IsDashingBackward", false);

@@ -3357,7 +3357,6 @@ GameObject:
   - component: {fileID: 921861809}
   - component: {fileID: 921861808}
   - component: {fileID: 921861807}
-  - component: {fileID: 921861812}
   - component: {fileID: 921861811}
   m_Layer: 5
   m_Name: HeathBar
@@ -3466,14 +3465,6 @@ MonoBehaviour:
   delayedSlider: {fileID: 221781292}
   decreaseSpeed: 40
   playerHealth: 100
---- !u!81 &921861812
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921861806}
-  m_Enabled: 1
 --- !u!1 &923137972
 GameObject:
   m_ObjectHideFlags: 0
@@ -7313,19 +7304,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515368526084027247, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_FollowOffset.y
-      value: 5.4
+      value: 2.365672
       objectReference: {fileID: 0}
     - target: {fileID: 1515368526084027247, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -11
+      value: -9.771924
       objectReference: {fileID: 0}
     - target: {fileID: 2140493073350655329, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_FollowOffset.y
-      value: 5.4
+      value: 2.365672
       objectReference: {fileID: 0}
     - target: {fileID: 2140493073350655329, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -11
+      value: -9.771924
       objectReference: {fileID: 0}
     - target: {fileID: 4454056177506246119, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7389,19 +7380,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5432631021649802514, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0031647778
+      value: 0.0031648148
       objectReference: {fileID: 0}
     - target: {fileID: 5432631021649802514, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0008760166
+      value: -0.0008760268
       objectReference: {fileID: 0}
     - target: {fileID: 5663437672849172114, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_FollowOffset.y
-      value: 5.4
+      value: 2.365672
       objectReference: {fileID: 0}
     - target: {fileID: 5663437672849172114, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -11
+      value: -9.771924
       objectReference: {fileID: 0}
     - target: {fileID: 6590113051075147946, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_Follow
@@ -7433,11 +7424,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7067756317280630589, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00314833
+      value: 0.003148332
       objectReference: {fileID: 0}
     - target: {fileID: 7067756317280630589, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0009334403
+      value: -0.000933441
       objectReference: {fileID: 0}
     - target: {fileID: 8345371159756518822, guid: 61c9cce45fbef3a47a4ff5bd14276355, type: 3}
       propertyPath: m_Name
@@ -9392,11 +9383,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 425030536063131003, guid: 1c3ba1b46a7bf2747ad0649333329676, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000003478184
+      value: 0.000000035035786
       objectReference: {fileID: 0}
     - target: {fileID: 425030536063131003, guid: 1c3ba1b46a7bf2747ad0649333329676, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000060444254
+      value: -0.0000000060885563
       objectReference: {fileID: 0}
     - target: {fileID: 425030536063131003, guid: 1c3ba1b46a7bf2747ad0649333329676, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
