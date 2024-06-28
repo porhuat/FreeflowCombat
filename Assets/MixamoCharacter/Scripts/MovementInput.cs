@@ -146,13 +146,11 @@ public class MovementInput : MonoBehaviour
 	}
 
 	#region Input
-
 	public void OnMove(InputValue value)
 	{
 		moveAxis.x = value.Get<Vector2>().x;
 		moveAxis.y = value.Get<Vector2>().y;
 	}
-
 	#endregion
 
 	private void OnDisable()

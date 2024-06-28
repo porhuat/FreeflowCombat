@@ -53,7 +53,6 @@ public class EnemyScript : MonoBehaviour
         playerCombat.OnTrajectory.AddListener((x) => OnPlayerTrajectory(x));
 
         MovementCoroutine = StartCoroutine(EnemyMovement());
-
     }
 
     IEnumerator EnemyMovement()
@@ -188,7 +187,6 @@ public class EnemyScript : MonoBehaviour
             isMoving = true;
         }
     }
-
 
     void PrepareAttack(bool active)
     {
