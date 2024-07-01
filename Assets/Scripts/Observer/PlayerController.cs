@@ -6,8 +6,12 @@ public class PlayerController : Subject
 {
     private bool _isJumpPressed = false;
     private bool _isAttacking = false;
+    private bool _isHurt = false;
 
+    private float _playerHealth = 100f;
+ 
     AudioSource _playerAudioPlayer;
+
     [SerializeField] AudioClip[] _gruntAudio;
 
     // Start is called before the first frame update
@@ -26,8 +30,11 @@ public class PlayerController : Subject
 
         _isAttacking = Input.GetKeyDown(KeyCode.C);
 
+        _isHurt = Input.GetKeyDown(KeyCode.X);
+
         OnJump();
         OnAttack();
+        GetHurt();
     }
 
     private void OnJump()
@@ -48,5 +55,28 @@ public class PlayerController : Subject
             _playerAudioPlayer.PlayOneShot(_gruntAudio[UnityEngine.Random.Range(0, _gruntAudio.Length)]);
             NotifyObservers(PlayerActions.AttackHit);
         }
+    }
+
+    private void GetHurt()
+    {
+        if (_isHurt)
+        {
+            PlayerHealth -= 10f;
+
+            if (PlayerHealth <= 0)
+            {
+                //notify the player has died
+            }
+            else
+            {
+                NotifyObservers(PlayerActions.Hurt);
+            }
+        }
+    }
+
+    public float PlayerHealth
+    {
+        get { return _playerHealth; }
+        set { _playerHealth = value; }
     }
 }

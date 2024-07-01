@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,10 +13,11 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    private Subject subject;
-
-    public float playerHealth { get; private set; } = 100f; // Default health
-    public float playerMaxHealth { get; private set; } = 100f; // Default maximum health
+    [SerializeField] private Slider instantSlider;  // 即時健康條
+    [SerializeField] private Slider delayedSlider;  // 延遲健康條
+    private float _decreaseSpeed = 40f;
+    //private float _playerHealth = 100f;
+    //private float _targetValue;  // 目標值，表示即時健康值
 
     void Awake()
     {
@@ -30,14 +32,33 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void Update()
+    public float DecreaseSpeed
     {
-        // Test decrease health by pressing X
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            playerHealth -= 10f;
-            subject.NotifyObservers(); // Notify observers about the change
-            Debug.Log("Player health: " + playerHealth);
-        }
+        get { return _decreaseSpeed; }
+        set { _decreaseSpeed = value; }
     }
+
+    //public float PlayerHealth
+    //{
+    //    get { return _playerHealth; }
+    //    set { _playerHealth = value; }
+    //}
+
+    //public float TargetValue
+    //{
+    //    get { return _targetValue; }
+    //    set { _targetValue = value; }
+    //}
+
+    //public Slider InstantSlider
+    //{
+    //    get { return instantSlider; }
+    //    set { instantSlider = value; }
+    //}
+
+    //public Slider DelayedSlider
+    //{
+    //    get { return delayedSlider; }
+    //    set { delayedSlider = value; } 
+    //}
 }
