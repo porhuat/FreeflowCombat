@@ -23,6 +23,38 @@ public class UIManager : MonoBehaviour, IObserver
     // Update is called once per frame
     void Update()
     {
+        UpdateDelayedHealthBar();
+    }
+
+    public void OnNotify(PlayerActions action)
+    {
+        //Display the action
+        if (action == PlayerActions.Hurt)
+        {
+            DecreaseHeartCountToDisplay();
+        }
+    }
+
+    private void SetMaxHealth(float maxHealth)
+    {
+        InstantSlider.maxValue = maxHealth;
+        DelayedSlider.maxValue = maxHealth;
+        InstantSlider.value = maxHealth;
+        DelayedSlider.value = maxHealth;
+        TargetValue = maxHealth;
+    }
+
+    private void DecreaseHeartCountToDisplay()
+    {
+        // Decrease player health
+        PlayerHealth -= 10f;
+        // Update target value
+        SetHealth(PlayerHealth);
+        Debug.Log("Player health UI Update: " + PlayerHealth + " Target: " + TargetValue);
+    }
+
+    private void UpdateDelayedHealthBar()
+    {
         // Gradually decrease the delayed health bar value to match the target value
         if (DelayedSlider.value > TargetValue)
         {
@@ -34,35 +66,7 @@ public class UIManager : MonoBehaviour, IObserver
         }
     }
 
-    public void OnNotify(PlayerActions action)
-    {
-        //Display the action
-        if (action == PlayerActions.Hurt)
-        {
-            if (PlayerHealth >= 0)
-            {
-                PlayerHealth -= 10f; // Decrease player health
-                SetHealth(PlayerHealth); // Update target value
-                Debug.Log("Player health UI Update: " + PlayerHealth + " Target: " + TargetValue);
-            }
-        }
-    }
-
-    public void SetMaxHealth(float maxHealth)
-    {
-        InstantSlider.maxValue = maxHealth;
-        DelayedSlider.maxValue = maxHealth;
-        InstantSlider.value = maxHealth;
-        DelayedSlider.value = maxHealth;
-        TargetValue = maxHealth;
-    }
-
-    public void DecreaseHeartCountToDisplay()
-    {
-        
-    }
-
-    public void SetHealth(float health)
+    private void SetHealth(float health)
     {
         TargetValue = health;
 

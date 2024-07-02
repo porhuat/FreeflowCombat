@@ -61,14 +61,15 @@ public class PlayerController : Subject
     {
         if (_isHurt)
         {
-            PlayerHealth -= 10f;
-
             if (PlayerHealth <= 0)
             {
                 //notify the player has died
+                NotifyObservers(PlayerActions.Dead);
             }
             else
             {
+                PlayerHealth -= 10f;
+                Debug.Log("PlayerController:" + PlayerHealth);
                 NotifyObservers(PlayerActions.Hurt);
             }
         }

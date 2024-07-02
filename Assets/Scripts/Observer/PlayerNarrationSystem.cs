@@ -27,6 +27,7 @@ public class PlayerNarrationSystem : MonoBehaviour, IObserver
             { PlayerActions.Login, HandleLogin },
             { PlayerActions.Logout, HandleLogout },
             { PlayerActions.Hurt, HandleHurt },
+            { PlayerActions.Dead, HandleDead },
             { PlayerActions.Jump, HandleJump },
             { PlayerActions.AttackHit, HandleAttackHit }
         };
@@ -80,6 +81,11 @@ public class PlayerNarrationSystem : MonoBehaviour, IObserver
 
         _audioPlayer.clip = _attackSwordSliceAudioClip;
         _audioPlayer.Play();
+    }
+
+    private void HandleDead()
+    {
+        Debug.Log("Dead!!!");
     }
 
     //在游戏对象启用时调用

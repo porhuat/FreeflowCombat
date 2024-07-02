@@ -4,5 +4,6 @@ public enum PlayerActions
     Logout,
     Hurt,
     Jump,
+    Dead,
     AttackHit
 }
